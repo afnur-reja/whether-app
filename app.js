@@ -8,7 +8,7 @@ const cityName = document.querySelector('.city');
 const humidity = document.querySelector('.humidity');
 const windSpeed = document.querySelector('.wind');
 
-const API_KEY = "your api key";
+const API_KEY = "Your API key.";
 
 const setResult = (set, info = {}) => {
     if(set) {

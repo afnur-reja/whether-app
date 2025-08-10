@@ -137,6 +137,12 @@
     }
 
     @media (max-width: 480px) {
+      .search-bar {
+        /* padding: 0 10px; Add small padding for edge phones */
+        position: fixed;
+        top: 2rem;
+        right: 15px;
+    }
       .temp {
         font-size: 44px;
       }
