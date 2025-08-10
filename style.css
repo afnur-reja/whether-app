@@ -24,9 +24,10 @@
     }
 
     .search-bar {
+     
       display: flex;
       justify-content: center;
-      margin-bottom: 25px;
+      text-align: center;
       gap: 10px;
     }
 
@@ -36,9 +37,10 @@
       border: none;
       border-radius: 50px;
       background: rgba(255, 255, 255, 0.25);
-      color: #1f1c1c;
+      color: #1f1c1cb3;
       font-size: 16px;
       transition: background 0.3s ease;
+      font-weight: bold;
     }
 
     .search-bar input::placeholder {
@@ -71,6 +73,10 @@
       transform: scale(1.05);
     }
 
+    .weather {
+       margin-top: 4rem;
+    }
+    
     .weather-icon {
       font-size: 80px;
       margin-bottom: 10px;
@@ -122,7 +128,13 @@
       margin-top: 2px;
     }
 
-    
+    .hide-weather {
+      visibility: hidden;
+    }
+
+    .hide-details {
+      visibility: hidden;
+    }
 
     @media (max-width: 480px) {
       .temp {
@@ -144,6 +156,9 @@
     @media (max-width: 320px) {
     .search-bar {
         padding: 0 10px; /* Add small padding for edge phones */
+        position: fixed;
+        top: 2rem;
+        right: 5px;
     }
 
     .search-bar button {
